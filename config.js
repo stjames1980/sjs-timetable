@@ -1,5 +1,9 @@
-// SJS Time Table – online sync settings (optional).
-// Leave as null to keep everything on each phone.
-// To share the Admin's changes with every phone, paste your Firebase web config here, e.g.
-// window.SJS_FIREBASE = { apiKey: "AIza...", authDomain: "sjs-timetable.firebaseapp.com", projectId: "sjs-timetable", appId: "1:...:web:..." };
-window.SJS_FIREBASE = null;
+// SJS Time Table – online sync settings (Firebase project: sjs-timetable)
+window.SJS_FIREBASE = {
+  apiKey: "AIzaSyD5nDjNVJrb9ePPq5SIC7tiqAdhYXogbOo",
+  authDomain: "sjs-timetable.firebaseapp.com",
+  projectId: "sjs-timetable",
+  storageBucket: "sjs-timetable.firebasestorage.app",
+  messagingSenderId: "352312773603",
+  appId: "1:352312773603:web:ab84f9b0019c03c39e6ed6"
+};
