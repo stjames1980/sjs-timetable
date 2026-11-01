@@ -1,0 +1,13 @@
+rules_version = '2';
+service cloud_firestore {
+  match /databases/{database}/documents {
+    // SJS Time Table: everyone can read, only the Admin email(s) can change.
+    function isAdmin() {
+      return request.auth != null && request.auth.token.email in [
+        'PUT-ADMIN-EMAIL-HERE@gmail.com'
+      ];
+    }
+    match /sjs_tt/{doc} { allow read: if true; allow write: if isAdmin(); }
+    match /sjs_tt_adj/{doc} { allow read: if true; allow write: if isAdmin(); }
+  }
+}
