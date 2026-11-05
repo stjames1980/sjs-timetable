@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SJS App has moved</title>
+<meta http-equiv="refresh" content="2;url=https://stjames1980.github.io/sjs-school/">
+<style>
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:#13294b;color:#fff;display:flex;min-height:100vh;align-items:center;justify-content:center;text-align:center;padding:20px}
+.c{max-width:420px}h1{font-size:22px;margin:0 0 10px}p{opacity:.9;line-height:1.5}
+a{display:inline-block;margin-top:14px;background:#c9a227;color:#13294b;font-weight:800;padding:14px 22px;border-radius:12px;text-decoration:none;font-size:16px}
+small{display:block;margin-top:18px;opacity:.75}
+</style>
+</head>
+<body>
+<div class="c">
+  <h1>📱 The school app has moved</h1>
+  <p>St. James H.S. School now uses the new <b>SJS App</b> – Time Table, Attendance, Marks, Exams and more in one app.</p>
+  <a href="https://stjames1980.github.io/sjs-school/">Open the new SJS App</a>
+  <small>Please uninstall this old app icon and install the new one:<br>Chrome → ⋮ → Install app</small>
+</div>
+<script>
+// Remove the old app's offline copy so this phone stops opening the old version
+try{ if('serviceWorker' in navigator){ navigator.serviceWorker.getRegistrations().then(rs=>rs.forEach(r=>r.unregister())); } }catch(e){}
+try{ if(window.caches){ caches.keys().then(ks=>ks.forEach(k=>caches.delete(k))); } }catch(e){}
+setTimeout(function(){ location.replace('https://stjames1980.github.io/sjs-school/'); }, 1500);
+</script>
+</body>
+</html>
